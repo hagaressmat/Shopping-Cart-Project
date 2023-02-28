@@ -1,0 +1,21 @@
+.createProductPage {
+}
+.createProductPage form {
+}
+.createProductPage input,
+.createProductPage select {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  border: 2px solid #00425a;
+  margin: 10px 0;
+  display: block;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.createProductPage input[type="submit"] {
+  background-color: #00425a;
+  color: #fff;
+  cursor: pointer;
+}

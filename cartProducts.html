@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Cart Page</title>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- srart header -->
+    <header>
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="brand"> Shopping Cart </a>
+
+          <nav>
+            <ul id="links">
+              <li><a href="login.html"> Sign In</a></li>
+              <li><a href="register.html"> Sign Up</a></li>
+            </ul>
+            <ul id="user_info">
+              <li><a href="#" id="user"></a></li>
+              <li><a href="favorite.html"> Favorites </a></li>
+              <li><a href="myProducts.html"> My Products </a></li>
+              <li class="shoppingCart">
+                <a><i class="fa-solid fa-cart-shopping"></i></a>
+                <span class="badge">1</span>
+                <div class="cart-products">
+                  <div></div>
+                  <a href="cartProducts.html"> Go To Cart </a>
+                </div>
+              </li>
+              <li><a href="#" id="logout"> Logout</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- srart form -->
+    <section class="home">
+      <div class="container">
+        <div class="products"></div>
+        <div class="noProducts"></div>
+      </div>
+    </section>
+    <!-- end form -->
+    <script src="JS/user.js"></script>
+    <script src="JS/cartMenu.js"></script>
+    <script src="JS/carts.js"></script>
+  </body>
+</html>
