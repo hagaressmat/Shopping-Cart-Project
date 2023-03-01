@@ -59,4 +59,6 @@ let productsDB = [
   },
 ];
 
-// localStorage.setItem("products", JSON.stringify(productsDB));
+if (!localStorage.getItem("products")) {
+  localStorage.setItem("products", JSON.stringify(productsDB));
+}

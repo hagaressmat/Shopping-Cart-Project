@@ -3,8 +3,12 @@ let nullCart = document.querySelector(".noProducts");
 
 function favoritesProductsUI(itemsCart = []) {
   //start empty cart
-  if (JSON.parse(localStorage.getItem("productsFavorite")).length === 0) {
-    nullCart.innerHTML = `<div class="emptyCart">Your Cart Is Empty!</div>
+  if (
+    !JSON.parse(localStorage.getItem("productsFavorite")) ||
+    JSON.parse(localStorage.getItem("productsFavorite")).length === 0
+  ) {
+    productDom.style.display = "none";
+    nullCart.innerHTML = `<div class="emptyCart">Your Favorites Is Empty!</div>
           <a href="index.html" class="backHome"> Back To Home </a>`;
     nullCart.style.display = "block";
   }

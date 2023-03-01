@@ -26,18 +26,18 @@ let putProductsUI;
               <i class="favorite fa-regular fa-heart" style = "font-weight : ${
                 item.liked == true ? "bold" : "100"
               }" onclick = "addToFavorite(${item.id})"></i>
-              ${
-                item.isMe === "Y" &&
-                "<button class='updateProduct' onclick = 'updateProduct(" +
-                  item.id +
-                  ")'>Update Product</button>"
-              }
-              ${
-                item.isMe === "Y" &&
-                "<button class='deleteProduct' onclick = 'deleteProduct(" +
-                  item.id +
-                  ")'>Delete Product</button>"
-              }
+             
+              <button class="updateProduct" onclick = "updateProduct(${
+                item.id
+              })" style = "display : ${
+      item.isMe === "Y" ? "block" : "none"
+    }">Update Product</button>
+
+                 <button class="deleteProduct" onclick = "deleteProduct(${
+                   item.id
+                 })" style = "display : ${
+      item.isMe === "Y" ? "block" : "none"
+    }">Update Product</button>
               <button class="add-to-cart"  " onclick = "addToCart(${
                 item.id
               })">Add To Cart</button>
