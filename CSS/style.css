@@ -247,6 +247,7 @@ nav li a {
 }
 
 .noProducts {
+  display: flex;
   width: 60%;
   margin: 10px 0;
   border: 2px solid #6096b4;
@@ -255,10 +256,10 @@ nav li a {
   display: none;
 }
 .noProducts .emptyCart {
-  display: block;
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0 20px 0;
+  justify-content: center;
 }
 
 .noProducts .backHome {

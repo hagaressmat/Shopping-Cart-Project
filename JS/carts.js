@@ -3,7 +3,11 @@ let nullCart = document.querySelector(".noProducts");
 
 function cartProductsUI(itemsCart = []) {
   //start empty cart
-  if (JSON.parse(localStorage.getItem("productsCart")).length === 0) {
+  if (
+    JSON.parse(localStorage.getItem("productsCart")) &&
+    JSON.parse(localStorage.getItem("productsCart")).length === 0
+  ) {
+    productDom.style.display = "none";
     nullCart.innerHTML = `<div class="emptyCart">Your Cart Is Empty!</div>
           <a href="index.html" class="backHome"> Back To Home </a>`;
     nullCart.style.display = "block";
